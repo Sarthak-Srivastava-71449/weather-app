@@ -1,16 +1,11 @@
 import * as express from "express";
 import { Request, Response } from "express";
 import axios from "axios";
-import * as cors from "cors";
+import cors from "cors";
 
 const app = express();
 const PORT = process.env.PORT || 5000; // Port for Express server
 
-const allowedOrigins = ['http://localhost:3000'];
-
-const options: cors.CorsOptions = {
-  origin: allowedOrigins
-};
 
 
 app.use(cors());
